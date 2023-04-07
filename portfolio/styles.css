@@ -1,0 +1,64 @@
+@media screen and (max-width:768px) {
+    .introSection{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .mainHeading {
+        position: relative;
+        top: 30px;
+        font-size: 30px;
+        left: 10%;
+        line-height: 50px;
+      }
+      .knowMoreBtn {
+        height: 3rem;
+        width: 7rem;
+        background-color: rgb(19, 17, 17);
+        color: rgb(237, 220, 220);
+        border: none;
+        font-size: larger;
+        font-family: cursive;
+        margin-left: 70vw;
+      }
+
+   .myImg{
+    position: relative;
+    top: 4vh;
+   }
+    
+}
+
+.knowMoreBtn{
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #a2aec7;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #2b3647 solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.knowMoreBtn:hover {
+  background-color: rgb(249,250,251);
+}
+
+.knowMoreBtn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.knowMoreBtn:focus-visible {
+  box-shadow: none;
+}

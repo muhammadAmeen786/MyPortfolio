@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .introSection {
+        height: 100vh;
+        background-color: black;
+        color: rgb(177, 172, 172);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-weight: 900;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .myImg , [alt='js-img'] {
+        height: 500px;
+        width: 330px;
+        border-radius: 30px;
+        position: relative;
+        top: 10vh;
+        transform: rotate(5deg);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      .mainHeading {
+        position: relative;
+        top: 200px;
+        font-size: 50px;
+        height:max-content;
+      }
+      #name {
+        color: rgb(70, 138, 138);
+      }
+      .knowMoreBtn {
+        position: absolute;
+        top: 90vh;
+        height: 3rem;
+        width: 7rem;
+        background-color: rgb(19, 17, 17);
+        color: rgb(237, 220, 220);
+        border: none;
+        font-size: larger;
+        font-family: cursive;
+      }
+
+      .navbar {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .navsection > ul {
+        display: flex;
+        width: 80vw;
+        justify-content: space-around;
+      }
+      .navsection > ul > li {
+        list-style-type: none;
+        color: rgb(255, 0, 179);
+      }
+      .navsection > ul > li>a{
+        text-decoration: none;
+        color: rgb(50, 132, 50);
+        font-size: 18px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: all 1s;
+      }
+      .navsection > ul > li>a:hover{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: underline;
+        transition: all 1s;
+        color: rgb(94, 166, 94);
+      }
+      
+      [alt="logophoto"] {
+        height: 50px;
+        width: 50px;
+      }
+      .navbar {
+        background-color: black;
+        color: white;
+      }
+      .myImgDiv{
+
+        width: 30%;
+        
+        transform: rotate(240deg);
+      }
+      .rotate{
+        transform: rotate(0deg);
+        /* background-color: rgb(52, 46, 46); */
+        transition: all 2s; 
+      }
+
+    
+    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./techstack.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="img">
+        <img
+          src="https://bcassetcdn.com/social/ck08xhw4ky/preview.png"
+          alt="logophoto"
+        />
+      </div>
+      <div class="navsection">
+        <ul>
+          <li> <a href="#">About Me</a></li>
+          <li> <a href="#">Projects</a></li>
+          <li> <a href="#">Blogs</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <img class="myImg" src="./DSC_1230.JPG" alt="my Img"> -->
+
+    <!--photo and intro section-->
+
+    <section class="introSection">
+      <div class="mainHeading">
+        I'm <span id="name">Muhammad Ameen</span> <br />
+        A Javascript Developer
+      </div>
+      <div class="myImgDiv">
+        <img class="myImg" src="./DSC_1231.JPG" alt="2nd img" />
+
+      </div>
+     
+      <!-- <img class="myImg" src="./DSC_1231-removebg-preview.png" alt="kuchB"> -->
+      <button class="knowMoreBtn">
+        Know More <i class="fa-duotone fa-arrow-right"></i>
+      </button>
+    </section>
+
+    <section class="tech-stack">
+      
+        <div class="tec-stack-1" >
+          <h1 class="Heading">
+              I usually love to code in
+             </h1>
+             <span class="spanColor">JavaScript</span> 
+             <h4>My Tech Stack is</h4> 
+              <button class="btn-1">HTML</button> <button  class="btn-1">CSS</button> <button  class="btn-1">Node.js</button>
+              <button  class="btn-1 sql">Sql</button> <button  class="btn-1">Java</button> <button  class="btn-1">Git</button> <button  class="btn-1">Github</button>
+              <button  class="btn-1">Figma</button>
+          
+         </div>
+       
+      </section>
+
+    <!-- <div class="mainHeading">
+        I'm  <span id="name">Muhammad Ameen</span>  <br>
+        A Javascript Developer
+    </div>
+    <img class="myImg"  src="./DSC_1231.JPG" alt="2nd img"> -->
+    <!--photo and intro section ends-->
+
+    <script>
+        let rightDiv = document.querySelector('.myImgDiv');
+        let body = document.querySelector('body')
+        body.addEventListener('mouseenter',fun);
+        function fun(){
+            rightDiv.classList.add('rotate')
+        }
+    </script>
+  </body>
+
+
+</html>
